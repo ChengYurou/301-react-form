@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import {Component} from 'react';
+import {render} from 'react-dom';
 import '../style/index.less';
+import PaperEditor from './component/PaperEditor'
 
-ReactDom.render(
-    <h1>Hello,World!</h1>,
-    document.getElementById('app')
-);
+render(
+    <PaperEditor/>,
+    document.getElementById('app'));
