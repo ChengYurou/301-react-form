@@ -1,5 +1,70 @@
-@base: #F00;
+@base-margin: 20px;
 
-body {
-    background: @base;
+#Paper {
+  margin: 20px;
+  background-color: #eff3f8;
+
+  .no-padding{
+    padding: 0px;
+  }
+  .paper-header {
+    margin:0px;
+    background-color: #438EB9;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 38px;
+    padding-left: 12px;
+    clear: right;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  .control-label {
+    text-align: right;
+    line-height: 300%;
+  }
+
+  #paper-info {
+    padding: 20px 0 10px;
+  }
+
+  #paper-checkbox{
+    .logic-label{
+      text-align: right;
+      line-height: 160%
+    }
+  }
+
+  #paper-section{
+    .split-border {
+      border: 0.5px solid #CCC;
+      margin: 15px 0;
+    }
+    .section-header {
+      margin: 20px 20px 0 20px;
+      border-top: 1px solid #CCCCCC;
+      border-left: 1px solid #CCCCCC;
+      border-right: 1px solid #CCCCCC;
+      position: relative;
+      min-height: 38px;
+      background-color: #438EB9;
+      color: #FFFFFF;
+      padding-left: 20px;
+
+      .section-title {
+        line-height: 36px;
+        display: inline;
+      }
+
+      .fa {
+        font-size: 150%;
+        margin-left: 10px;
+      }
+
+      .section-toolbar {
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 37px;
+        float: right;
+      }
+    }
+  }
 }

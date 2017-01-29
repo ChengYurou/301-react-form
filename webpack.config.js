@@ -6,7 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     "index": './client/src/index.js',
-    "vendors": ['bootstrap.css', 'react', 'react-dom']
+    "vendors": ['bootstrap.css', 'react', 'react-dom', 'font-awesome.css']
   },
   output: {
     path: __dirname + '/client/dist/',
@@ -68,7 +68,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css'
+      'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css',
+      'font-awesome.css': 'font-awesome/css/font-awesome.min.css',
     }
   }
 };

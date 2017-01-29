@@ -5,8 +5,74 @@ import '../../style/index.less';
 export default class PaperEditor extends Component {
   render() {
     return (
-        <div>
-          hello
+        <div id="Paper">
+          <p className="paper-header">新建试卷</p>
+          <div id="paper-info">
+            <div className="row form-group">
+              <label className="col-sm-3 control-label" for="paperName">试卷名称</label>
+              <div className="col-sm-6">
+                <input type="text" className="form-control" id="paperName"/>
+              </div>
+
+            </div>
+            <div className="row form-group">
+              <label className="col-sm-3 control-label" for="paperInfo">试卷描述</label>
+              <div className="col-sm-6">
+                <textarea type="text" className="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="paper-checkbox">
+            <div className="row form-group">
+              <label className="col-sm-3 logic-label">逻辑题</label>
+              <div className="col-sm-6">
+                <input type="checkbox"/>
+              </div>
+            </div>
+            <div className="row col-sm-offset-3">
+              <div className="col-sm-2 form-group">
+                <label for="easy">简单</label>
+                <input type="number" className="form-control" id="easy"/>
+              </div>
+              <div className="col-sm-2 form-group">
+                <label for="normal">一般</label>
+                <input type="number" className="form-control" id="normal"/>
+              </div>
+              <div className="col-sm-2 form-group">
+                <label for="hard">困难</label>
+                <input type="number" className="form-control" id="hard"/>
+              </div>
+            </div>
+          </div>
+
+          <div id='paper-section'>
+            <div className='split-border'></div>
+            <div className="row">
+              <div className='col-sm-offset-1 col-sm-10 no-padding'>
+
+                <div className="section-header row">
+                  <div className='section-title col-sm-6 row'>
+                    <div className='col-sm-3 no-padding '>
+                      <input type='text' className="form-control"/>
+                    </div>
+                    <div className='col-sm-1'>
+                      <i className="fa fa-pencil-square-o"> </i>
+                    </div>
+                  </div>
+                  <div className='section-toolbar'>
+                    <i className='fa fa-trash-o white'> </i>
+                  </div>
+                </div>
+
+                <div className="col-sm-offset-1 col-sm-10 no-padding">
+                  <div className='text-center'>
+                    <i className='fa fa-plus'> </i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     );
   }
