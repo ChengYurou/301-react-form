@@ -24,24 +24,24 @@ export default class PaperEditor extends Component {
           </div>
 
           <div id="paper-checkbox">
-            <div className="row form-group">
-              <label className="col-sm-3 logic-label">逻辑题</label>
+            <div className="row">
+              <label className="col-sm-3 text-right">逻辑题</label>
               <div className="col-sm-6">
                 <input type="checkbox"/>
               </div>
             </div>
-            <div className="row col-sm-offset-3">
+            <div className="row col-sm-offset-3 form-inline">
               <div className="col-sm-2 form-group">
                 <label for="easy">简单</label>
-                <input type="number" className="form-control" id="easy"/>
+                <input type="number" className="form-control level-input" id="easy"/>
               </div>
               <div className="col-sm-2 form-group">
                 <label for="normal">一般</label>
-                <input type="number" className="form-control" id="normal"/>
+                <input type="number" className="form-control level-input" id="normal"/>
               </div>
               <div className="col-sm-2 form-group">
                 <label for="hard">困难</label>
-                <input type="number" className="form-control" id="hard"/>
+                <input type="number" className="form-control level-input" id="hard"/>
               </div>
             </div>
           </div>
