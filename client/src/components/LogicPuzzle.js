@@ -28,22 +28,22 @@ const labels = [
 
 export default class LogicPuzzle extends Component {
   handleUpdate() {
-    let quizzes;
+    let definition;
     if (this.inputInfo.checked) {
-      quizzes = {
+      definition = {
         easy: parseInt(this.easy.value) || 0,
         normal: parseInt(this.normal.value) || 0,
         hard: parseInt(this.hard.value) || 0
       };
     }
-    this.props.updateLogicPuzzle({quizzes});
+    this.props.updateLogicPuzzle({definition});
   }
 
   componentDidUpdate() {
     this.inputInfo.checked = this.props.toggleStatus;
-    this.easy.value = this.props.quizzes.easy || '';
-    this.normal.value = this.props.quizzes.normal || '';
-    this.hard.value = this.props.quizzes.hard || '';
+    this.easy.value = this.props.definition.easy || '';
+    this.normal.value = this.props.definition.normal || '';
+    this.hard.value = this.props.definition.hard || '';
   }
 
   render() {

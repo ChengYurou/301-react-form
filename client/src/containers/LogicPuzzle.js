@@ -12,11 +12,11 @@ function getQuizzes(paperInfo) {
         return item.type === 'logicQuiz';
       })[0] || {};
 
-  return result.quizzes || {};
+  return result.definition || {};
 }
 const mapStateToProps = ({paperInfo}) => ({
   toggleStatus: getToggle(paperInfo),
-  quizzes: getQuizzes(paperInfo)
+  definition: getQuizzes(paperInfo)
 });
 
 const mapDispatchToProps = (dispatch) => {
