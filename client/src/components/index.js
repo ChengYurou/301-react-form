@@ -3,7 +3,8 @@ import {Component} from 'react';
 import '../../style/index.less';
 import PaperInfo from '../containers/PaperInfo';
 import LogicPuzzle from '../containers/LogicPuzzle';
-import SectionList from '../containers/SectionList'
+import SectionList from '../containers/SectionList';
+import SectionAddButton from '../containers/SectionAddButton'
 
 export default class PaperEditor extends Component {
   render() {
@@ -13,6 +14,7 @@ export default class PaperEditor extends Component {
           <PaperInfo/>
           <LogicPuzzle/>
           <SectionList/>
+          <SectionAddButton/>
       </div>
     );
   }

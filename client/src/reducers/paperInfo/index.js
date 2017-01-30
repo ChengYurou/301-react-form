@@ -1,9 +1,11 @@
 import editPaper from './editPaper';
 import updateLogicPuzzle from './updateLogicPuzzle';
+import addSection from './addSection'
 
 const actionMap = {
   'EDIT_PAPER' : editPaper,
-  'UPDATE_LOGIC_PUZZLE': updateLogicPuzzle
+  'UPDATE_LOGIC_PUZZLE': updateLogicPuzzle,
+  'ADD_SECTION': addSection,
 };
 
 function paperInfo(state = {sections: []}, action) {
