@@ -1,8 +1,9 @@
 import React from 'react';
 import {Component} from 'react';
 import '../../style/index.less';
-import PaperInfo from '../containers/PaperInfo'
-import LogicPuzzle from '../containers/LogicPuzzle'
+import PaperInfo from '../containers/PaperInfo';
+import LogicPuzzle from '../containers/LogicPuzzle';
+import SectionList from '../containers/SectionList'
 
 export default class PaperEditor extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class PaperEditor extends Component {
           <p className="paper-header">新建试卷</p>
           <PaperInfo/>
           <LogicPuzzle/>
+          <SectionList/>
       </div>
     );
   }
