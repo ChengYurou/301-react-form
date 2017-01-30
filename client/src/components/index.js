@@ -5,7 +5,7 @@ import PaperInfo from '../containers/PaperInfo';
 import LogicPuzzle from '../containers/LogicPuzzle';
 import SectionList from '../containers/SectionList';
 import SectionAddButton from '../containers/SectionAddButton';
-import PaperSubmit from './PaperSubmit'
+import PaperSubmit from '../containers/PaperSubmit'
 
 export default class PaperEditor extends Component {
   render() {
