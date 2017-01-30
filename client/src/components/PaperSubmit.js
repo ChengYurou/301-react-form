@@ -30,14 +30,14 @@ export default class PaperSubmit extends Component {
 
   savePaper() {
     const message = this.checkPaperNameAndDesc();
-    if(message.length > 0) {
+    if (message.length > 0) {
       this.setState({showModal: '', message: message})
     }
   }
 
   submitPaper() {
     const message = this.checkPaperNameAndDesc();
-    if(message.length > 0) {
+    if (message.length > 0) {
       this.setState({showModal: '', message: message})
     }
   }

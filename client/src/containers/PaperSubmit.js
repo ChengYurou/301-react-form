@@ -5,7 +5,6 @@ const mapStateToProps = ({paperInfo}) => {
   return {data: paperInfo};
 };
 
-const mapDispatchToProps = () => {
-  return {};
-};
-export default connect(mapStateToProps, mapDispatchToProps)(PaperSubmit);
+export default connect(mapStateToProps, ()=> {
+  return {}
+})(PaperSubmit);
