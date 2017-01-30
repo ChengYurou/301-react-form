@@ -1,8 +1,10 @@
 import editPaper from './editPaper';
+import updateLogicPuzzle from './updateLogicPuzzle';
 
 const actionMap = {
-  'EDIT_PAPER' : editPaper
-}
+  'EDIT_PAPER' : editPaper,
+  'UPDATE_LOGIC_PUZZLE': updateLogicPuzzle
+};
 
 function paperInfo(state = {sections: []}, action) {
   const func = actionMap[action.type];

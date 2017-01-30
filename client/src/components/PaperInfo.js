@@ -4,7 +4,7 @@ import '../../style/index.less'
 
 export default class PaperInfo extends Component {
   editPaperName() {
-    this.props.editPaper({paperName: this.paperName.value});
+    this.props.editPaper({name: this.name.value});
   }
 
   editDescription() {
@@ -12,7 +12,7 @@ export default class PaperInfo extends Component {
   }
 
   receivePropsData() {
-    this.paperName.value = this.props.paperName || '';
+    this.name.value = this.props.name || '';
     this.description.value = this.props.description || '';
   }
 
@@ -32,7 +32,7 @@ export default class PaperInfo extends Component {
             <div className="col-sm-6">
               <input type="text" className="form-control"
               ref = {(ref) => {
-                this.paperName = ref;
+                this.name = ref;
               }} onBlur={this.editPaperName.bind(this)}/>
             </div>
 
