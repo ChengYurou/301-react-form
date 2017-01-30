@@ -4,7 +4,8 @@ import '../../style/index.less';
 import PaperInfo from '../containers/PaperInfo';
 import LogicPuzzle from '../containers/LogicPuzzle';
 import SectionList from '../containers/SectionList';
-import SectionAddButton from '../containers/SectionAddButton'
+import SectionAddButton from '../containers/SectionAddButton';
+import PaperSubmit from './PaperSubmit'
 
 export default class PaperEditor extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class PaperEditor extends Component {
           <LogicPuzzle/>
           <SectionList/>
           <SectionAddButton/>
+          <PaperSubmit/>
       </div>
     );
   }
