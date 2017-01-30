@@ -8,7 +8,7 @@ export default class SectionList extends Component {
   render() {
     const sections = this.props.sections || [];
     let sectionList = sections.map((section, index) => {
-      return <div key={index}>
+      return <div key={index} className="row">
         <Section index={index} {...section}/>
       </div>;
     });
