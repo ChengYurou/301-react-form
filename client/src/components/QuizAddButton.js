@@ -1,7 +1,5 @@
 import React from 'react';
 import {Component} from 'react';
-// import superagent from 'superagent';
-// import noCache from 'superagent-no-cache';
 import {Modal, Button} from 'react-bootstrap';
 import '../../style/index.less';
 

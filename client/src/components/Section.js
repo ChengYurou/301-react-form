@@ -17,7 +17,7 @@ export default class Section extends Component {
           <SectionName title={this.props.title} sectionIndex={this.props.index}
                        onToggleSction={this.handleToggleSection.bind(this)}/>
           <div className='homework-border row'>
-            {/*<HomeworkQuizzes sectionIndex={this.props.index} homeworkQuizzes={this.props.quizzes}/>*/}
+            <HomeworkQuizzes sectionIndex={this.props.index} homeworkQuizzes={this.props.definition.quizzes}/>
             <QuizAddButton sectionIndex={this.props.index}/>
           </div>
         </div>
