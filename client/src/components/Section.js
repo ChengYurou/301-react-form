@@ -18,9 +18,10 @@ export default class Section extends Component {
                        onToggleSction={this.handleToggleSection.bind(this)}/>
           <div className='homework-border row'>
             {/*<HomeworkQuizzes sectionIndex={this.props.index} homeworkQuizzes={this.props.quizzes}/>*/}
-            {/*<QuizAddButton sectionIndex={this.props.index}/>*/}
+            <QuizAddButton sectionIndex={this.props.index}/>
           </div>
         </div>
     );
   }
 }
+
