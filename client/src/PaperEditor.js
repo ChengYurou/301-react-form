@@ -1,6 +1,6 @@
 import React from 'react'
 import {Component} from 'react';
-import '../../style/index.less';
+import '../style/index.less';
 
 export default class PaperEditor extends Component {
   render() {
@@ -9,14 +9,14 @@ export default class PaperEditor extends Component {
           <p className="paper-header">新建试卷</p>
           <div id="paper-info">
             <div className="row form-group">
-              <label className="col-sm-3 control-label" for="paperName">试卷名称</label>
+              <label className="col-sm-3 control-label">试卷名称</label>
               <div className="col-sm-6">
-                <input type="text" className="form-control" id="paperName"/>
+                <input type="text" className="form-control"/>
               </div>
 
             </div>
             <div className="row form-group">
-              <label className="col-sm-3 control-label" for="paperInfo">试卷描述</label>
+              <label className="col-sm-3 control-label">试卷描述</label>
               <div className="col-sm-6">
                 <textarea type="text" className="form-control"></textarea>
               </div>
@@ -32,16 +32,16 @@ export default class PaperEditor extends Component {
             </div>
             <div className="row col-sm-offset-3 form-inline">
               <div className="col-sm-2 form-group">
-                <label for="easy">简单</label>
-                <input type="number" className="form-control level-input" id="easy"/>
+                <label>简单</label>
+                <input type="number" className="form-control level-input"/>
               </div>
               <div className="col-sm-2 form-group">
-                <label for="normal">一般</label>
-                <input type="number" className="form-control level-input" id="normal"/>
+                <label>一般</label>
+                <input type="number" className="form-control level-input"/>
               </div>
               <div className="col-sm-2 form-group">
-                <label for="hard">困难</label>
-                <input type="number" className="form-control level-input" id="hard"/>
+                <label>困难</label>
+                <input type="number" className="form-control level-input"/>
               </div>
             </div>
           </div>
