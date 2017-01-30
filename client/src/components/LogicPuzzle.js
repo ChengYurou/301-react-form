@@ -2,10 +2,10 @@ import React from 'react';
 import {Component} from 'react';
 import '../../style/index.less'
 
-const DifficultySetter = ({text, difficulty, content}) => (
+const DifficultySetter = ({text, difficulty, content, disabled}) => (
     <div className='col-sm-2 form-group'>
       <label >{text}</label>
-      <input type='number' className='level-input form-control' ref={(ref) => {
+      <input disabled={disabled} type='number' className='level-input form-control' ref={(ref) => {
         content[difficulty] = ref;
       }} onBlur={content.handleUpdate.bind(content)}/>
     </div>
